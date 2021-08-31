@@ -4,6 +4,7 @@
   --secondary-color: #e0b354;
   --dark-grey: #7a7a7a;
   --normal-weight: 700;
+  --grid-background: #ffffff;
 }
 
 body {
@@ -145,7 +146,8 @@ body {
  
   }
   .grid__item {
-    background-color: var(--dark-grey);
+    background-color: var(--grid-background);
+    border-radius: 8px;
     width: auto;
     min-height: auto;
     margin: 0;
