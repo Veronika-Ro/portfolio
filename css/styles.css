@@ -1,6 +1,6 @@
 :root {
   --background-color: #fbf7f5;
-  --primary-color: #357b70;
+  --primary-color: #007777;
   --secondary-color: #e0b354;
   --dark-grey: #7a7a7a;
   --normal-weight: 700;
@@ -217,7 +217,7 @@ body {
 
   .about,
   .contact {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
   }
