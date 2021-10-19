@@ -3,50 +3,341 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Veronika's Webpage</title>
+  <title>Veronika Rogatskaja</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="shortcut icon" href="./img/favicon-16x16.png">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles-flip-card.css">
   <!-- To optimise your website for mobile phones and tablets -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-  <header class="page-header">
+  <header>
+    <nav class="navbar navbar-expand-sm page-header fixed-top main-navigation ">
+      <h1 class="navbar-brand">VERONIKA ROGATSKAJA</h1>
 
-
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">HOME</a>
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a href="#home" class="nav-link navigation-list__item navigation-list__item--active">HOME</a>
         </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link  navigation-list__item ">WORK</a>
         </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
+        <li role="presentation" class="nav-item">
+          <a href="#about" class="nav-link  navigation-list__item">ABOUT</a>
         </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
+        <li role="presentation" class="nav-item">
+          <a href="#contact" class="nav-link navigation-list__item justify-content-end">CONTACT</a>
         </li>
       </ul>
+
     </nav>
 
   </header>
 
-  <main class="profile">
-    <!-- Add your Portrait image here -->
-    <img src="img/Veronika-Rogatskaja.jpg" class="profile__portrait" alt="Veronika Rogatskaja Portrait">
-    <h1>Hello World!</h1>
-    <p>My name is Veronika Rogatskaja. I am an aspiring <span>web</span> developer based in London.</p>
-    <p>I have just finished a full stack web development immersion course and I can help you with
-      frontend
-      and backend web and application projects. I look forward to working with you!</p>
-    <a href="https://github.com/Veronika-Ro" target="_blank">Check out some of my code</a> <br>
+  <main id="home">
+    <section class="profile">
+      <img src="img/Veronika-Rogatskaja.jpg" class="profile__portrait" alt="Veronika Rogatskaja Portrait">
+      <h1>Hello, my name is Veronika.</h1>
+      <p>I am an aspiring junior full stack web developer based in London.</p>
+      <p>I have just finished a full stack web development immersion course and I can help you with
+        frontend
+        and backend web and application projects. I look forward to working with you!</p>
+      <p>I am currenty available for full-time work, remote work and freelance projects.</p>
+      <div class="button-group">
+        <a href="https://github.com/Veronika-Ro" target="_blank" class="btn btn-outline-secondary">My code
+          repository</a>
+
+        <a href="img/Veronika-Rogatskaja-CV.pdf" target="_blank" class="btn btn-outline-secondary" download>Download
+          my CV</a>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h1>My Projects</h1>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 projects-card">
+            <div class="card card-flip h-100">
+              <div class="card-front bg-white">
+                <div class="card-body">
+                  <i class="fa fa-search fa-5x float-right"></i>
+                  <h3 class="card-title">MyFlix Movie App - Angular</h3>
+                  <img src="img/Angular.jpg" alt="Angular project" style="width:100%;height:95%;">
+                </div>
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body">
+                  <h3 class="card-title">MyFlix Movie App - Angular</h3>
+                  <p class="card-text">A single-page, responsive movie app built with Angular, with routing and
+                    several interface
+                    views. The client-side developed here supports the existing server-side by facilitating user
+                    requests
+                    and rendering the response from the
+                    server-side via a number of different interface views.</p>
+                  <div class="button-group">
+                    <a href="https://veronika-ro.github.io/myFlix-Angular-client/" target="_blank"
+                      class="btn btn-outline-secondary">Website</a>
+                    <a href="https://github.com/Veronika-Ro/myFlix-Angular-client" target="_blank"
+                      class="btn btn-outline-secondary">Code</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 projects-card">
+            <div class="card card-flip h-100">
+              <div class="card-front bg-white">
+                <div class="card-body">
+                  <i class="fa fa-search fa-5x float-right"></i>
+                  <h3 class="card-title">Chat App - React Native</h3>
+                  <img src="img/Chat.jpg" alt="React Native project" style="width:100%;height:90%;">
+                </div>
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body">
+                  <h3 class="card-title">Chat App - React Native</h3>
+                  <p class="card-text">A chat app for mobile devices developed with React Native.The app provides
+                    users with a chat interface and options to share images and their location.</p>
+
+                  <div class="button-group">
+
+                    <a href="https://github.com/Veronika-Ro/hello-world" target="_blank"
+                      class="btn btn-outline-secondary">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 projects-card">
+            <div class="card card-flip h-100">
+              <div class="card-front bg-white">
+                <div class="card-body">
+                  <i class="fa fa-search fa-5x float-right"></i>
+                  <h3 class="card-title">Movie App - React</h3>
+                  <img src="img/myFlix-React.jpg" alt="React project" style="width:100%;height:90%;">
+                </div>
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body">
+                  <h3 class="card-title">Back</h3>
+                  <p class="card-text">A single-page, responsive movie app built with React, with routing and
+                    several interface
+                    views. The client-side developed here supports the existing server-side by facilitating user
+                    requests
+                    and rendering the response from the
+                    server-side via a number of different interface views.</p>
+                  <div class="button-group">
+                    <a href="https://veronika-ro.github.io/myFlix-client/" target="_blank"
+                      class="btn btn-outline-secondary">Website</a>
+                    <a href="https://github.com/Veronika-Ro/myFlix-client" target="_blank"
+                      class="btn btn-outline-secondary">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 projects-card">
+            <div class="card card-flip h-100">
+              <div class="card-front bg-white">
+                <div class="card-body">
+                  <i class="fa fa-search fa-5x float-right"></i>
+                  <h3 class="card-title">Meet App - React</h3>
+                  <img src="img/meet-App.jpg" alt="React project" style="width:100%;height:90%;">
+                </div>
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body">
+                  <h3 class="card-title">Meet App - React</h3>
+                  <p class="card-text">A serverless, progressive web application (PWA) with React using a
+                    test-driven development (TDD) technique. The application uses the Google Calendar API to
+                    fetch upcoming web development events around the world.</p>
+                  <div class="button-group">
+                    <a href="https://veronika-ro.github.io/meet/" target="_blank"
+                      class="btn btn-outline-secondary">Website</a>
+                    <a href="https://github.com/Veronika-Ro/meet" target="_blank"
+                      class="btn btn-outline-secondary">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 projects-card">
+            <div class="card card-flip h-100">
+              <div class="card-front bg-white">
+                <div class="card-body">
+                  <i class="fa fa-search fa-5x float-right"></i>
+                  <h3 class="card-title">Pokedex - Javascript</h3>
+                  <img src="img/Pokedex.jpg" alt="Pokedex project" style="width:100%;height:90%;">
+                </div>
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body">
+                  <h3 class="card-title">Pokedex - Javascript</h3>
+                  <p class="card-text">A small web application built with HTML, CSS, and JavaScript that loads
+                    data from an external
+                    API and enables the viewing of data points in detail.</p>
+
+                  <div class="button-group">
+                    <a href="https://veronika-ro.github.io/first-js-project/" target="_blank"
+                      class="btn btn-outline-secondary">Website</a>
+                    <a href="https://github.com/Veronika-Ro/first-js-project" target="_blank"
+                      class="btn btn-outline-secondary">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 projects-card">
+            <div class="card card-flip h-100">
+              <div class="card-front bg-white">
+                <div class="card-body">
+                  <i class="fa fa-search fa-5x float-right"></i>
+                  <h3 class="card-title">Portfolio - HTML</h3>
+                  <img src="img/Portfolio.jpg" alt="Portfolio project" style="width:100%;height:90%;">
+                </div>
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body">
+                  <h3 class="card-title">Portfolio - HTML</h3>
+                  <p class="card-text">This is a simple website I created to showcase my progress and different
+                    projects I have
+                    undertaken at my
+                    full-stack web development course. Built using HTML, CSS and Bootstrap.</p>
+
+                  <div class="button-group">
+
+                    <a href="https://veronika-ro.github.io/portfolio-website/" target="_blank"
+                      class="btn btn-outline-secondary">Website</a>
+                    <a href="https://github.com/Veronika-Ro/Portfolio-website.git" target="_blank"
+                      class="btn btn-outline-secondary">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="about" class="about">
+      <h1>About me</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="card col-md" style="width: 22rem;">
+            <!-- Code to enter images to cards
+            <img class="card-img-top" src="..." alt="Card image cap"> -->
+            <div class="card-body">
+              <h5 class="card-title">Hard Skills</h5>
+              <p class="card-text">
+              <ul class="about-list">
+                <li>HTML, CSS, Javascript, Typescript </li>
+                <li>React, Angular, React Native </li>
+                <li>MongoDB, PostgreSQL</li>
+                <li>Node</li>
+                <li>AWS, Firebase, Wordpress, Heroku</li>
+                <li>Github</li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card col-md" style="width: 22rem;">
+
+            <div class="card-body">
+              <h5 class="card-title">Soft Skills</h5>
+              <p class="card-text">
+              <ul class="about-list">
+                <li>I aspire to learn, grow and get things done</li>
+                <li>Proactive </li>
+                <li>Responsible</li>
+                <li>Quick Learner</li>
+                <li>I speak English, Russian and Lithuanian</li>
+                <li>Happy to work both independently and in a team</li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+
+          <div class="w-100"></div>
+
+          <div class="card col-md" style="width: 22rem;">
+
+            <div class="card-body">
+              <h5 class="card-title">Education</h5>
+              <p class="card-text">
+              <ul class="about-list">
+                <li>Full-Stack Web Development Immersion Course</li>
+                <li>02/2021-11/2021</li>
+                <li>CareerFoundry, Online</li>
+
+                <li>MA International Business Management</li>
+                <li>09/2013-09/2014</li>
+                <li>University of Greenwich, London, UK</li>
+                <li>Diploma with distinction</li>
+              </ul>
+
+
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card col-md" style="width: 22rem;">
+
+            <div class="card-body">
+              <h5 class="card-title">Hobbies and interests</h5>
+              <p class="card-text">
+              <ul class="about-list">
+                <li>Travelling</li>
+                <li>I travelled to 20 countries in 2019!</li>
+                <li>and then pandemic happened ... </li>
+                <li>Trying new cuisines</li>
+                <li>Reading</li>
+                <li>Dancing</li>
+                <li>Working out</li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section id="contact" class="contact">
+
+      <h1>Contact details</h1>
+      <h2>Veronika Rogatskaja</h2>
+      <p>Junior Full Stack Web Developer</p>
+      <p>Email: <a href="mailto:veronikarogatskaja@gmail.com">veronikarogatskaja@gmail.com</a></p>
+      <p>London, United Kingdom</p>
+    </section>
+
+
 
   </main>
 
@@ -61,6 +352,10 @@
       </a>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 
 </body>
 
